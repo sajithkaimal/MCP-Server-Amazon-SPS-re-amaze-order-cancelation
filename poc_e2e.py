@@ -7,7 +7,7 @@ POC: Re:amaze (read, optional write) + Amazon SP-API (read-only) sanity check.
   Uses the maintained `python-amazon-sp-api` package (module: sp_api)
 
 Env vars required (minimal POC):
-  REAMAZE_BRAND            e.g., "crescendo"            (host becomes https://crescendo.reamaze.io)
+  REAMAZE_BRAND            e.g., "acme"            (host becomes https://acme.reamaze.io)
   REAMAZE_EMAIL            login email that OWNS the API token
   REAMAZE_API_TOKEN        per-user API token
 
