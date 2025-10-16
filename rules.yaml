@@ -1,0 +1,13 @@
+# Human-editable knobs for your workflow.
+
+# Who should own cancellation tickets after the bot touches them?
+assignee: "Treffy"
+
+# Tag sets the bot will add
+tags:
+  success: ["auto-cancel", "done"]
+  failure: ["needs-human"]
+  not_cancellation: ["not-cancel"]
+
+# Safety: when true, SP-API is NOT called; we only post a note with the would-be payload.
+dry_run: false

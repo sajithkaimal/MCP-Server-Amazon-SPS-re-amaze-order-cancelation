@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.crescendo.cancelbot</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/YOUR_USERNAME/.venv/cancelbot/bin/python</string>
+    <string>/Users/YOUR_USERNAME/SPS-re-amaze/app.py</string>
+  </array>
+
+  <!-- every 15 minutes; change to 3600 for hourly -->
+  <key>StartInterval</key><integer>900</integer>
+
+  <key>StandardOutPath</key><string>/Users/YOUR_USERNAME/SPS-re-amaze/out.log</string>
+  <key>StandardErrorPath</key><string>/Users/YOUR_USERNAME/SPS-re-amaze/err.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PYTHONUNBUFFERED</key><string>1</string>
+    <!-- Optional: explicitly point to your .env (the app also uses python-dotenv auto-load) -->
+    <!-- <key>ENV_FILE</key><string>/Users/YOUR_USERNAME/SPS-re-amaze/.env</string> -->
+  </dict>
+
+  <key>RunAtLoad</key><true/>
+</dict>
+</plist>
